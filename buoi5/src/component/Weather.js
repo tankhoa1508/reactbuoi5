@@ -51,7 +51,7 @@ export default function Weather() {
           <div className="content">
             <h1>{data.name}</h1>
             <Row>
-              <div className="col-6">
+              <div className="col col-6">
               
                 <p><i class="fa-solid fa-location-dot"></i> {data.name}</p>
                 <p className="date"><i class="fa-solid fa-calendar-week"></i> DayTime | Thursday</p>
@@ -61,7 +61,7 @@ export default function Weather() {
                 <p><i class="fa-solid fa-sun"></i> {getTime(data.sys.sunrise)}</p>
                 <p><i class="fa-solid fa-moon"></i> {getTime(data.sys.sunset)}</p>
               </div>
-              <div className="col-6 img">
+              <div className="col col-6 img">
                 <img className="img1"
                   src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`}
                 />
